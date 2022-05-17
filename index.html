@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width: device-width, initial-scale=1.0">
+    <title>Time Tracker</title>
+    
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <!--Font Rubik 300, 400 and 500-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+    
+  </head>
+  <body>
+    
+    <main>
+      <section class="wrapper">
+        <div class="card1 bg-navyblue rounded">
+          <div class="bio rounded">
+            
+            <div id="picture">
+              <img src="./assets/images/image-jeremy.png" id="profile-pic" alt="profile picture">
+            </div>
+            <div id="name">
+            <p class="gray">Report for</p>
+            <h1 class="white">Jeremy Robson</h1>
+            </div>
+        
+          </div>
+         <div class="buttons">
+            <button class="btn gray" id="daily" onclick="update(event)">Daily</button>
+            <button class="btn gray" id="weekly" onclick="update(event)">Weekly</button>
+            <button class="btn gray" id="monthly" onclick="update(event)">Monthly</button>
+          </div>
+        </div>
+        
+      <div class="box box-work rounded">
+          
+          <div class="stat rounded">
+            <div class="stat-head">
+              <h2 class="white">Work</h2>
+              <div><img src="./assets/images/icon-ellipsis.svg" alt="Click for more information about work time statistics"/></div>
+            </div>
+            <div class="stat-body">
+              <p class="current-time white">...hrs</p>
+              <p class="previous-time">Last week - ...</p>
+            </div>
+          </div>
+        </div>
+  
+      <div class="box box-play rounded">
+          
+          <div class="stat rounded">
+            <div class="stat-head">
+              <h2 class="white">Play</h2>
+              <div><img src="./assets/images/icon-ellipsis.svg" alt="Click for more information about play time statistics"/></div>
+            </div>
+            <div class="stat-body">
+              <p class="current-time white">...hrs</p>
+              <p class="previous-time">Last week - ...hrs</p>
+            </div>
+          </div>
+        </div>
+   
+      <div class="box box-study rounded">
+          
+          <div class="stat rounded">
+            <div class="stat-head">
+              <h2 class="white">Study</h2>
+              <div><img src="./assets/images/icon-ellipsis.svg" alt="Click for more information about study time statistics"/></div>
+            </div>
+            <div class="stat-body">
+              <p class="current-time white">...hrs</p>
+              <p class="previous-time">Last week - ...hrs</p>
+            </div>
+          </div>
+        </div>
+    
+      <div class="box box-exercise rounded">
+          
+          <div class="stat rounded">
+            <div class="stat-head">
+              <h2 class="white">Exercise</h2>
+              <div><img src="./assets/images/icon-ellipsis.svg" alt="Click for more information about exercise time statistics"/></div>
+            </div>
+            <div class="stat-body">
+              <p class="current-time white">...hrs</p>
+              <p class="previous-time">Last week - ...hrs</p>
+            </div>
+          </div>
+        </div>
+    
+      <div class="box box-social rounded">
+          
+          <div class="stat rounded">
+            <div class="stat-head">
+              <h2 class="white">Social</h2>
+              <div><img src="./assets/images/icon-ellipsis.svg" alt="Click for more information about social activity statistics"/></div>
+            </div>
+            <div class="stat-body">
+              <p class="current-time white">...hrs</p>
+              <p class="previous-time">Last week - ...hrs</p>
+            </div>
+          </div>
+        </div>
+        
+      <div class="box box-selfcare rounded">
+          
+          <div class="stat rounded">
+            <div class="stat-head">
+              <h2 class="white">Self Care</h2>
+              <div><img src="./assets/images/icon-ellipsis.svg" alt="Click for more information about Self Care statistics"/></div>
+            </div>
+            <div class="stat-body">
+              <p class="current-time white">...hrs</p>
+              <p class="previous-time">Last week - ...hrs</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <script src="./assets/scripts/script.js"></script>
+  </body>
+</html>

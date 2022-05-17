@@ -1,0 +1,206 @@
+:root {
+  --bg-bio: hsl(246, 80%, 60%);
+  --bg-play: hsl(195, 74%, 62%);
+  --bg-work: hsl(15, 100%, 70%);
+  --bg-study: hsl(348, 100%, 68%);
+  --bg-exercise: hsl(145, 58%, 55%);
+  --bg-social: hsl(264, 64%, 52%);
+  --bg-selfcare: hsl(43, 84%, 65%);
+  --bg-primary: hsl(226, 43%, 10%);
+  --bg-decent: hsl(235, 46%, 20%);
+  --bg-secondary: hsl(235, 45%, 61%);
+  --clr-paleblue: hsl(236, 100%, 87%);
+}
+* {
+  margin: 0;
+}
+body {
+  background-color: var(--bg-primary);
+}
+.bio {
+  background-color: var(--bg-bio);
+}
+h1 {
+  font-family: Rubik, Sans-Serif;
+  font-size: 25px;
+}
+h2 {
+  font-size: 18px;
+}
+.card1 {
+  margin: 3.5em 2em 2em 2em;
+}
+.bio {
+  display: flex;
+  padding: 2em 1.2em;
+}
+#picture {
+  flex-basis: 30%;
+}
+#name .gray {
+  font-weight: 500;
+  font-size: 13px;
+}
+#profile-pic {
+  width: 70%;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.buttons {
+  padding: 1.2em;
+  display: flex;
+  justify-content: space-between;
+}
+.box {
+  margin: 2em;
+  padding-top: 2.5em;
+  background-repeat: no-repeat;
+  background-position: 95% -10%;
+}
+
+
+/* Background image and color for different stat card */
+.box-work {
+  background-image: url(../images/icon-work.svg);
+  background-color: var(--bg-work);
+}
+.box-play {
+  background-image: url(../images/icon-play.svg);
+  background-color: var(--bg-play);
+}
+.box-study {
+  background-image: url(../images/icon-study.svg);
+  background-color: var(--bg-study);
+}
+.box-exercise {
+  background-image: url(../images/icon-exercise.svg);
+  background-color: var(--bg-exercise);
+}
+.box-social {
+  background-image: url(../images/icon-social.svg);
+  background-color: var(--bg-social);
+}
+.box-selfcare {
+  background-image: url(../images/icon-self-care.svg);
+  background-color: var(--bg-selfcare);
+}
+
+/* End setting different background image and color for different stat card */
+
+
+.stat {
+  padding: 2em;
+  background-color: var(--bg-decent);
+}
+.stat-head, .stat-body {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+.stat-head h2 {
+  font-weight: 500;
+  font-size: 18px;
+}
+.stat-body {
+  margin-top: 0.5em;
+}
+.previous-time {
+  color: var(--clr-paleblue);
+  font-size: 14px;
+  margin-top: 1em;
+}
+.current-time {
+  font-size: 28px;
+}
+
+/*Styoes for desktop view */
+@media screen and (min-width: 40em) {
+    .wrapper {
+    margin: 20vh 7vw;
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw 20vw;
+    grid-auto-rows: auto auto;
+    gap: 1.5vw;
+  }
+  .bio {
+    margin: 0;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 55%;
+  }
+  .buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #profile-pic {
+    width: 40%;
+  }
+  .card1 {
+    margin: 0;
+    grid-column: 1;
+    grid-row: 1/3;
+  }
+  .box {
+    margin: 0;
+  }
+  .box-work {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .box-play {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .box-study {
+    grid-column: 4;
+    grid-row: 1;
+  }
+  .box-exercise {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .box-social {
+    grid-column: 3;
+    grid-row: 2;
+  }
+  .box-selfcare {
+    grid-column: 4;
+    grid-row: 2;
+  }
+  .stat-body {
+    display: block;
+  }
+  .stat-body .current-time {
+    font-size: 35px;
+  }
+}
+
+
+/*utility classes  -=>*/
+
+.white {
+  color: white;
+  font-weight: 300;
+}
+.gray {
+  color: var(--clr-paleblue);
+}
+.btn {
+  background-color: transparent;
+  border: none;
+  font-family: Rubik, Sans-Serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+.btn:hover {
+  color: white;
+}
+.bg-navyblue {
+  background-color: var(--bg-decent);
+}
+.rounded {
+  border-radius: 6%;
+}
+.stat:hover {
+  background-color: var(--bg-secondary);
+}
